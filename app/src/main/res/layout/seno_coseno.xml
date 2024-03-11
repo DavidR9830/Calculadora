@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rdb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grados"
+            android:checked="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"/>
+
+        <RadioButton
+            android:id="@+id/rdb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Radianes"
+            android:layout_toEndOf="@id/rdb1"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"/>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/txtAngulo"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/radioGroup"
+        android:hint="Ingrese el ángulo"
+        android:inputType="numberDecimal"
+        android:layout_margin="16dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtAngulo"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sin"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <Button
+            android:id="@+id/btnCos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cos"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"/>
+    </LinearLayout>
+
+</RelativeLayout>
